@@ -5,106 +5,172 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perros sanos|Comodoro Rivadavia</title>
+    <link rel="stylesheet" href="css/estilos.css"> <!--Vinculación a css, debe hacerse en cada pág html-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 </head>
 <body>
-    <header>
-        <img src="imagenes/logo.jpg" alt="logo perro y gato" width="260" height="304">
-        <h1>Perros sanos | Comodoro Rivadavia </h1>
+    <header class="cabecera">
+        <div class="contenedor">
+            <img class="logo" src="imagenes/logo1.jpg" alt="logo perro y gato">
+        
+            <nav class="navegacion">
+                <ul class="navegacion_lista">
+                    <li>
+                    <a class="navegacion_enlace" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                    <a class="navegacion_enlace" href="solicitaturno.html">Solicitá turno</a>
+                    </li>
+                    <li>
+                    <a class="navegacion_enlace" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>   
 
-    <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="solicitaturno.html">Solicitá turno</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-    </nav>
-
     <main>
-        <section>
-            <h2>¿Por qué son necesarias las castraciones masivas?</h2>
-            <p><ul>
-                <li>La castración o esterilización es el método más efectivo que existe para evitar 
-                    la superpoblación de animales, el nacimiento de crías que jamás encontrarán un hogar y el abandono.</li>
-                <li>Evita el vagabundeo en machos.</li>
-                <li>Disminuye el riesgo de que se extravíe o tenga un accidente.</li>
-                <li>Mejora el carácter y evita que se pelee con otros animales.</li>
-            </ul></p>
-
-        </section>
-            <section>
-            <h2>Derribando mitos</h2>
-            <p><ul>
-                <li>No es necesario esperar a que las hembras tengan una primera cría para poder realizar la cirugía.</li>
-                <li>Los machos no necesitan aparearse una vez antes de la castración.</li>
-            </ul></p>
+        <section class="hero">
+            <h1 class="tituloprincipal">Perros sanos | Comodoro Rivadavia </h1>
         </section>
 
-        <div>
-            <img src="imagenes/criasgatitos.jpeg" alt="gatitos" width="450" height="260">
-            <img src="imagenes/perritos.jpeg" alt="perritos" width="375" height="427">
-        </div>
-        <button><strong><h2> <a href="solicitaturno.html">¡Solicitá turno!</a> </h2></strong></button>
+        <section class="seccion"> <!--masivas-->
+            <h2 class="titulos">Cuidar a tus mascotas es querer a tu ciudad</h2>
 
-        <section>
-            <h3>¿Qué beneficios tiene la castración para la salud de mi perra o gata?</h3>
-            <h4>Los beneficios son muchos, pero los que más destacan son:</h4>
-        <p>
-            <ul>
-               <li>reduce en gran porcentaje el riesgo de que padezcan cáncer de mama;</li>
-               <li>elimina por completo los embarazos y el sangrado (celo);</li>
-               <li>evita por completo el cáncer de útero, de ovarios, la piómetra (infección uterina);</li>
-               <li>evita por completo que contraigan tumores de transmisión venérea.</li>
-           </ul>
-        </p>
+            <div class="necesarias_mitos">
+                <div class="motivos">
+                    <h3>¿Por qué son necesarias las castraciones masivas?</h3>
+                </div>               
+
+                <div class="motivos">
+                    <p>
+                        <ul>
+                            <li>La castración o esterilización es el método más efectivo que existe para evitar 
+                        la superpoblación de animales, el nacimiento de crías que jamás encontrarán un hogar y el abandono.</li>
+                            <li>Evita el vagabundeo en machos.</li>
+                            <li>Disminuye el riesgo de que se extravíe o tenga un accidente.</li>
+                            <li>Mejora el carácter y evita que se pelee con otros animales.</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div>
+                    <img class="gatitos" src="imagenes/criasgatitos.jpeg" alt="gatitos">
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h3>¿Qué beneficios tiene la castración para la salud de mi perro o gato?</h3>
-            <h4>Los beneficios son muchos, pero los que más destacan son:</h4>
-        <p>
-            <ul>
-                <li>reduce la incidencia de tumores en próstata;</li>
-                <li>reduce hasta poder llegar a eliminar el marcado de territorio con la orina;</li>
-                <li>elimina los tumores testiculares;</li>
-                <li>reduce el riesgo de contraer infecciones por mordeduras en peleas, sobre todo en gatos;</li>
-                <li>evita por completo que contraigan tumores de transmisión venérea.</li>
-            </ul>
-        </p>
+        <section class="seccion"> <!--mitos-->
+            <div class="necesarias_mitos">
+                <div class="motivos">
+                    <h3>Derribando mitos</h3>
+                </div>
+                <div class="motivos">
+                    <p>
+                        <ul>
+                            <li>No es necesario esperar a que las hembras tengan una primera cría para poder realizar la cirugía.</li>
+                            <li>Los machos no necesitan aparearse una vez antes de la castración.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <img class="perritos" src="imagenes/perritos.jpeg" alt="perritos">
+                </div>
+            </div>
         </section>
-        <button><strong><h2> <a href="solicitaturno.html">¡Solicitá turno!</a> </h2></strong></button>
+
+        <section class="seccion"> <!--Beneficios hembras-->
+                <h3 class="beneficios_titulo">Beneficios</h3>
+
+            <div class="beneficios">
+                <div class="motivos">
+                    <h3>En hembras</h3>
+                </div>
+                
+                <div class="motivos">
+                    <p>
+                        <ul>
+                            <li>reduce en gran porcentaje el riesgo de que padezcan cáncer de mama;</li>
+                            <li>elimina por completo los embarazos y el sangrado (celo);</li>
+                            <li>evita por completo el cáncer de útero, de ovarios, la piómetra (infección uterina);</li>
+                            <li>evita por completo que contraigan tumores de transmisión venérea.</li>
+                        </ul>
+                    </p>
+                </div>
+                    
+                <div>
+                    <img class="gatitaycrias" src="imagenes/gatitaycrias.jpg" alt="gatitaycrias">
+                </div>
+            </div>       
+        </section>
+                 
+             
+        <section class="seccion"> <!--Beneficios machos-->
+            <div class="beneficios">
+                <div class="motivos">
+                    <h3>En machos</h3>
+                </div>
+
+                <div class="motivos">
+                    <p>
+                        <ul>
+                            <li>reduce la incidencia de tumores en próstata;</li>
+                            <li>reduce hasta poder llegar a eliminar el marcado de territorio con la orina;</li>
+                            <li>elimina los tumores testiculares;</li>
+                            <li>reduce el riesgo de contraer infecciones por mordeduras en peleas, sobre todo en gatos;</li>
+                            <li>evita por completo que contraigan tumores de transmisión venérea.</li>
+                        </ul>
+                    </p>
+                </div>
+                    
+                <div>
+                    <img class="perroygato" src="imagenes/perroygato.jpg" alt="perro y gato">
+                </div>
+            </div>
+        </section>
+
+        <section class="video"> <!--ver video-->
+            <h3 class="protenencia">Protenencia Argentina</h3>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oNgCHEw7u1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="regalasalud">
+            <h2 class="accion">♥ Regalale salud a tu mascota ♥</h2>
+            <div>
+                <a class="boton" href="solicitaturno.html">Solicitá turno</a>
+            </div>
+        </section>
+        
     </main>
     
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="solicitaturno.html">Solicitá turno</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
 
-    <footer>
-        <h3>Encontranos también en</h3>
-        <ul>
-            <li>WhatsApp <a href="">+54 9 297 297 2972</a></li>
-            <li><a href="https://facebook.com/" target="_blank">Facebook</a></li>
-            <li><a href="https://instragram.com/" target="_blank">Instagram</a></li>
-        </ul>
+    <footer class="pie">
+        <div class="contenedor_pie">
+            <nav>
+                <ul class="menu_pie">
+                    <li class="navegacion_enlace"> <a href="index.html">Inicio</a></li>
+                    <li class="navegacion_enlace"> <a href="solicitaturno.html">Solicitá turno</a></li>
+                    <li class="navegacion_enlace"> <a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
 
-        <div>Hecho con amor|2021|Por Ornella De Rosa</div>
+            <div>
+                <nav class="rrss">
+                    <a href="https://facebook.com/"><span class="jam jam-facebook-square rrss_iconos"></span></a>
+                    <a href="https://www.instagram.com"><span class="jam jam-instagram rrss_iconos"></span></a>
+                    <a href="+54 9 297 297 2972"><span class="jam jam-whatsapp rrss_iconos"></span></a>
+                </nav> 
+            </div>
+        </div>
+        
+        <div>
+            Hecho con amor | 2021 | Por Ornella De Rosa
+        </div>
     </footer>
 
 </body>

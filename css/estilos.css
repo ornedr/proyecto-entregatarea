@@ -1,0 +1,232 @@
+/* Codigo CSS */
+/* 
+
+Sintaxis
+Selector {
+    propiedad1: valor;
+    propiedad2: valor;
+    propiedadN: valorN;
+}
+
+Tipos de selectores
+    Etiqueta(tag)-> Cualquier elemento de html que conocemos y selecciona todo aquel que coincida con ese elemento
+    Clase(.)-> Tenemos que utilizar en el html un atributo llamado class y asignarle un nombre
+    ID(#)-> Se refiere a un identificador unico que nunca se debe repetir
+    Universal(*)-> Se refiere a seleccionar todos los elementos y aplicará los estilos
+*/
+
+/* reseteo de estilos que el navegador trae por defecto */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    color:rgb(7, 0, 73);
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.cabecera{
+    background-color: royalblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor{
+    max-width: 80%;
+    margin: 0 auto;
+    
+    /* propiedades que vamos a ver en detalle en una clase*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 110px;
+}
+
+.navegacion{
+    min-width: 50%;    
+}
+
+.navegacion_lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navegacion_enlace{
+    color: rgb(7, 0, 73);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.tituloprincipal{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.hero{
+    background-color: royalblue;
+    height: 400px;
+    background-image: url(../imagenes/triangles.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion{
+    padding: 64px 32px;
+}
+
+.titulos{
+    display: inline-block;
+    padding: 5px;
+    margin: 15px;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 400;
+    background-color: rgba(65, 105, 225, 0.377);
+    border-radius: 3px;
+}
+
+.necesarias_mitos{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+}
+
+.beneficios_titulo{ /*HELP, por qué no logro alinear a la derecha o centrar? para probar qué es mejor*/
+    display: inline-block;
+    padding: 5px;
+    margin: 15px;
+    justify-content: end; 
+    align-items: flex-end;
+    font-size: 26px;
+    font-weight: 400;
+    background-color: rgba(65, 105, 225, 0.377);
+    border-radius: 3px;   
+}
+
+.beneficios{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    gap: 15px;
+    text-align: center;
+}
+
+.motivos{
+    background-color: rgba(65, 105, 225, 0.377);
+    padding: 15px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.perritos{
+    max-width: 300px;
+}
+
+.perroygato{
+    max-width: 300px;
+}
+
+.cachorroabandonado{
+    max-width: 300px;
+}
+
+.gatitaycrias{
+    max-width: 350px;
+}
+
+.cachorros{
+    max-width: 350px;
+}
+
+.gatitos{
+    max-width: 350px;
+}
+
+.video{
+    text-align: center;
+}
+
+.protenencia{
+    display: inline-block;
+    font-size: 24px;
+    padding: 5px;
+    margin: 15px;
+    font-weight: 400;
+    background-color: rgba(65, 105, 225, 0.377);
+    border-radius: 3px;
+}
+
+.regalasalud{
+    text-align: center;
+}
+
+.accion{
+    font-style: italic;
+    margin: 16px;
+    font-weight: 400;
+}
+
+.boton{
+    display: inline-block;
+    background-color: deepskyblue;
+    text-decoration: none;
+    color: ghostwhite;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-bottom: 32px;
+}
+
+footer{
+    background-color: royalblue;
+}
+
+.pie{
+    padding: 15px;
+}
+
+.contenedor_pie{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100%;    
+    margin-bottom: 0 auto;
+}
+
+.menu_pie{ /*HELP tampoco sé cómo lograr que el menú quede como en el header*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.rrss_iconos{
+    font-size: 40px;
+    color: paleturquoise;
+    text-decoration: none;
+    margin: 5px;
+}
+
+
