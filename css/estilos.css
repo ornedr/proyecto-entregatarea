@@ -104,17 +104,22 @@ h3{
 
 .necesarias_mitos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 15px;
     align-items: center;
 }
 
+.seccion_beneficios{
+    padding: 64px 32px;
+    text-align: center;
+}
+
 .beneficios_titulo{ /*HELP, por qué no logro alinear a la derecha o centrar? para probar qué es mejor*/
     display: inline-block;
+    flex-wrap: wrap;
     padding: 5px;
     margin: 15px;
-    justify-content: end; 
-    align-items: flex-end;
     font-size: 26px;
     font-weight: 400;
     background-color: rgba(65, 105, 225, 0.377);
@@ -123,11 +128,20 @@ h3{
 
 .beneficios{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: row-reverse;
     gap: 15px;
     text-align: justify;
+}
+
+.beneficio{
+    text-align: center;
+    background-color: rgba(65, 105, 225, 0.377);
+    padding: 30px;
+    width: 80%;
+    max-width: 400px;
 }
 
 .motivos{
@@ -200,7 +214,8 @@ h3{
 .pie{
     margin: 0 auto;
     background-color: royalblue;
-    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .contenedor_pie{
@@ -221,15 +236,10 @@ h3{
 }
 
 .enlace_pie{
-    color: aliceblue; /*no me toma el color, no sé dónde ponerlo*/
+    color: rgb(7, 0, 73); /*no me toma el color, no sé dónde ponerlo*/
     font-size: 20px;
     text-decoration: none; /*no me toma el cambio, intenté mil formas*/
-    padding: 10px;
-}
-
-a{ /*recurro a esto por no encontrar la forma de cambiarlo*/
-    text-decoration: none;
-    color: rgb(7, 0, 73);
+    margin: 10px;
 }
 
 .rrss_iconos{
@@ -237,7 +247,7 @@ a{ /*recurro a esto por no encontrar la forma de cambiarlo*/
     justify-content: space-around;
     color:aliceblue;
     font-size: 35px;
-    margin: 5px;
+    margin: 10px;
 }
 
 .fin{
