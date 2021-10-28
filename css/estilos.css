@@ -36,6 +36,11 @@ h3{
     padding-bottom: 15px;
     width: 100%;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+
+    /* Puedo usar POSITION para fijar el menú
+    position: fixed; 
+    top: 0;
+    left: 0; */
 }
 
 .contenedor{
@@ -49,9 +54,8 @@ h3{
 }
 
 .logo{
-    width: 150px;
-    height: 150px;
-    border-radius: 110px;
+    width: 212px;
+    height: 69.8px;
 }
 
 .navegacion{
@@ -69,6 +73,11 @@ h3{
     color: rgb(7, 0, 73);
     text-decoration: none;
     font-size: 20px;
+    transition: all 1s;
+}
+
+.navegacion_enlace:hover{
+    color: aliceblue;
 }
 
 .tituloprincipal{
@@ -85,6 +94,17 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.logo_hero{
+    width: 530px;
+    height: 177px;
+}
+
+.presentacion{
+    text-align: center;
+    font-size: 24px;
 }
 
 .seccion{
@@ -164,19 +184,24 @@ h3{
 }
 
 .gatitaycrias{
-    max-width: 350px;
+    max-width: 300px;
 }
 
 .cachorros{
-    max-width: 350px;
+    max-width: 300px;
 }
 
 .gatitos{
-    max-width: 350px;
+    max-width: 300px;
 }
 
 .video{
     text-align: center;
+}
+
+.videoadopta{
+    text-align: center;
+    margin-top: 20px;
 }
 
 .protenencia{
@@ -209,6 +234,96 @@ h3{
     font-weight: 900;
     letter-spacing: 1.5px;
     margin-bottom: 32px;
+    transition: all 1s;
+}
+
+.boton:hover{
+    box-shadow: 0px 5px 7px aliceblue;
+    color: rgb(7, 0, 73);
+}
+
+.seccionadopta{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 15px;
+}
+
+.premisas{
+    background-color: rgba(65, 105, 225, 0.377);
+    padding: 20px;
+    padding-left: 30px;
+    width: 100%;
+    max-width: fit-content;
+    text-align: left;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.itemspremisas{
+    margin-bottom: 10px;
+}
+
+.todalavida{
+    border: 5px solid aliceblue;
+    background-color: rgba(240, 248, 255, 0.911);
+    padding: 10px 5px;
+    border-radius: 5px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 80%;
+    font-size: 22px;
+}
+
+.maltrato{
+    text-align: center;
+    border: 3px solid red;
+    border-radius: 10px;
+    display: inline-block;
+    justify-content: center;
+    align-self: center;
+    width: fit-content;
+    padding: 15px;
+}
+
+.ley{
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.art{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    width: 100%;
+}
+
+.sitioslista{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.sitiosadopcion{
+    text-decoration: none;
+    color: rgb(7, 0, 73); /*no me toma el color, no sé dónde ponerlo (estaba manipulando el li, debebía ser a)*/
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: all 1s;
+}
+
+.sitiosadopcion:hover{
+    font-weight: 900;
+    color: royalblue;
 }
 
 .pie{
@@ -220,8 +335,8 @@ h3{
 
 .contenedor_pie{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 .contenedor_nav{
@@ -236,21 +351,81 @@ h3{
 }
 
 .enlace_pie{
-    color: rgb(7, 0, 73); /*no me toma el color, no sé dónde ponerlo*/
+    color: rgb(7, 0, 73); /*no me toma el color, no sé dónde ponerlo (estaba manipulando el li, debebía ser a)*/
     font-size: 20px;
-    text-decoration: none; /*no me toma el cambio, intenté mil formas*/
+    text-decoration: none; /*no me toma el cambio, intenté mil formas (estaba manipulando el li, debebía ser a)*/
     margin: 10px;
+    transition: all 1s;
+}
+
+.enlace_pie:hover{
+    color: aliceblue;
 }
 
 .rrss_iconos{
     display: inline-block;
     justify-content: space-around;
-    color:aliceblue;
-    font-size: 35px;
+    color:rgb(7, 0, 73);
+    font-size: 25px;
     margin: 10px;
+    transition: all 1s;
+}
+
+.rrss_iconos:hover{
+    color: aliceblue;
 }
 
 .fin{
     font-size: 15px;
     text-align: center;
+    margin-top: 10px;
+}
+
+/*Medias querys*/ /*Se usa para adaptar el sitio a dispositivos con pantallas más pequeñas que un escritorio de pc,
+esto es: celulares, tablets, notebooks. "El diseño ahora es mobile first"-Luis*/
+
+@media (max-width: 768px) {
+    .cabecera .contenedor{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .main-section .hero .presentacion{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navegacion{
+        min-width: 100%;
+    }
+
+    .navegacion_lista{
+        justify-content: space-evenly;
+    }
+
+    .logo_hero{
+        flex-direction: column;
+        max-width: 290px;
+        max-height: 96.84px;
+    }
+
+    .seccion .seccion_beneficios{
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .titulos{
+        font-size: 22px;
+    }
+
+    .videoyt{
+        max-width: 320px;
+        max-height: 206.25px;
+    }
+    
+    .contenedor_pie{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
