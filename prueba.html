@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+
+    <!-- 1° opción Descargando archivos de bootstrap y vinculando los estilos (descargar sirve para trabajar cuando no hay conexión a internet y es recomendable cuando ya trabajemos para un cliente)-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--2° opción CDN y vinculando estilos correspondientes (dependen de ese link, el día que se caiga ese link no va a aplicar estilos)-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+    <!-- Estilos propios deben estar debajo de la vinculación de bootstrap porque el navegador lee en cascada y si lo ponemos primero y modificamos algo en nuestra hoja de estilos va a aplicar finalmente lo que indica bootstrap-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="contenedor">
+            <a href="index.html"><img class="logo" src="imagenes/protenencia_logo.png" alt="logo perro y gato"></a>
+
+            <nav class="navegacion">
+                <ul class="navegacion_lista">
+                    <li>
+                        <a class="navegacion_enlace" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="navegacion_enlace" href="solicitaturno.html">Solicitá turno</a>
+                    </li>
+                    <li>
+                        <a class="navegacion_enlace" href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="navegacion_enlace" href="adopta.html">Adoptá</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="TituloPrincipal"> Prueba | Comodoro Rivadavia </h1>
+        </section>
+
+        <section>
+            <div class="container">
+                <h3 class="ley">Ley 14.346</h3>
+                <div class="row">
+                    <div class="col col-6">
+                        <div class="">
+                            <h4>Art. 2: Se consideran actos de maltrato</h4>
+                            <ol>
+                                <li>No alimentar a los animales.</li>
+                                <li>Espolearlos (picar con espuelas) para el trabajo.</li>
+                                <li>Hacerlos trabajar jornadas excesivas.</li>
+                                <li>Estimularlos con drogas.</li>
+                                <li>Emplear animales para el tiro vehículos.</li>
+                            </ol>
+                        </div>  
+                    </div>
+        
+                    <div class="col col-6">
+                        <div class="">
+                            <h4>Art.3: Se consideran actos de crueldad.</h4>
+                            <ol>
+                                <li>Practicar vivisección con fines que no sean científicamente demostrados.</li>
+                                <li>Mutilar cualquier parte del animal, salvo con fines de mejoramiento.</li>
+                                <li>Intervenir quirúrgicamente animales sin anestesia y sin poseer título de médico veterinario.</li>
+                                <li>Castigar y arrollar animales intencionalmente.</li>
+                                <li>Realizar actos públicos o privados de riñas de animales, corridas de toros, novilladas, en que los mate, hiera u hostilice.</li>
+                            </ol>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <img src="imagenes/galgo.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <img src="imagenes/gatito.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <img src="imagenes/dog.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <img src="imagenes/kittens.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <!--1° opción Descargando archivos de bootstrap y vinculando javascript (descargar sirve para trabajar cuando no hay conexión a internet y es recomendable cuando ya trabajemos para un cliente)
+*esta etiqueta scrip debe ir siempre una línea antes de la etiqueta de cierre del body, para que cargue primero la página, porque gralmente script cumple una función ejecutable y si lo ponemos al principio de todo se va a ejecutar antes que la página, EJEMPLO avisos de confirmación de edad +18 para cargar la página-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!--2° opción CDN y vinculando js correspondiente (dependen de ese link, el día que se caiga ese link no va a aplicar estilos)-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
+
+</body>
+
+</html>

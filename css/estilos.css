@@ -20,7 +20,7 @@ Tipos de selectores
     box-sizing: border-box;
 }
 
-body {
+body{
     background-color: lightblue;
     color:rgb(7, 0, 73);
     font-family: 'Roboto', sans-serif;
@@ -292,17 +292,38 @@ h3{
     padding: 15px;
 }
 
+/* comento porque quiero probar bootstrap
+.art{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.art1{
+    min-width: 50%;
+    padding-left: 110px;
+    text-align: left;
+}
+
+.art2{
+    min-width: 50%;
+    text-align: left;
+} */
+
+.artb{
+    text-align: left;
+    background-color: rgba(65, 105, 225, 0.377);
+}
+
+.lista{
+    align-content: center;
+}
+
 .ley{
     font-size: 26px;
     font-weight: 900;
-}
-
-.art{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    align-content:center;
-    width: 100%;
+    text-align: center;
 }
 
 .sitioslista{
@@ -401,6 +422,7 @@ esto es: celulares, tablets, notebooks. "El diseño ahora es mobile first"-Luis*
 
     .navegacion_lista{
         justify-content: space-evenly;
+        padding: 0;
     }
 
     .logo_hero{
@@ -414,6 +436,10 @@ esto es: celulares, tablets, notebooks. "El diseño ahora es mobile first"-Luis*
         padding: 5px;
     }
 
+    .motivos{
+        text-align: start;
+    }
+
     .titulos{
         font-size: 22px;
     }
@@ -421,6 +447,16 @@ esto es: celulares, tablets, notebooks. "El diseño ahora es mobile first"-Luis*
     .videoyt{
         max-width: 320px;
         max-height: 206.25px;
+    }
+
+    .seccionadopta{
+        margin: 0;
+        padding: 0;
+    }
+
+    .sitioslista{
+        width: 100%;
+        flex-direction: column;
     }
     
     .contenedor_pie{

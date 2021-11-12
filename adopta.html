@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adoptá|Comodoro Rivadavia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css"> <!--Vinculación a css, debe hacerse en cada pág html-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,10 +80,10 @@
                 </h3>
             </div> 
             
-            <div>
+            <!--<div> comento porque quiero probar bootstrap
                 <h3 class="ley">Ley 14.346</h3>
                 <div class="art">
-                    <div class="premisas">
+                    <div class="art1">
                         <h4>Art. 2: Se consideran actos de maltrato</h4>
                         <ol>
                             <li>No alimentar a los animales.</li>
@@ -93,7 +94,7 @@
                         </ol>
                     </div>
     
-                    <div class="premisas">
+                    <div class="art2">
                         <h4>Art.3: Se consideran actos de crueldad.</h4>
     
                         <ol>
@@ -105,12 +106,93 @@
                         </ol>
                     </div>
                 </div>
-            </div>           
+            </div>-->
+            
+            <div class="container">
+                <h3 class="ley">Ley 14.346</h3>
+                <div class="row">
+                    <div class="col col-6">
+                        <div class="artb">
+                            <h4>Art. 2: Se consideran actos de maltrato</h4>
+                            <ol>
+                                <li>No alimentar a los animales.</li>
+                                <li>Espolearlos (picar con espuelas) para el trabajo.</li>
+                                <li>Hacerlos trabajar jornadas excesivas.</li>
+                                <li>Estimularlos con drogas.</li>
+                                <li>Emplear animales para el tiro de vehículos.</li>
+                            </ol>
+                        </div>  
+                    </div>
+        
+                    <div class="col col-6">
+                        <div class="artb">
+                            <h4>Art.3: Se consideran actos de crueldad.</h4>
+                            <ol>
+                                <li>Practicar vivisección con fines que no sean científicamente demostrados.</li>
+                                <li>Mutilar cualquier parte del animal, salvo con fines de mejoramiento.</li>
+                                <li>Intervenir quirúrgicamente animales sin anestesia y sin poseer título de médico veterinario.</li>
+                                <li>Castigar y arrollar animales intencionalmente.</li>
+                                <li>Realizar actos públicos o privados de riñas de animales, corridas de toros, novilladas, en que los mate, hiera u hostilice.</li>
+                            </ol>
+                        </div> 
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="seccionadopta">
-            <h2 class="titulos">Sitios para encontrar tu nueva mascota</h2>
+            <h2 class="titulos">Ellos esperan por una familia que los adopte</h2>
             
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <img src="imagenes/galgo.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Galgui</h5>
+                              <p class="card-text">Los galgos suelen ser rescatados del descarte, ya sea de caza o carreras.</p>
+                              <a href="#" class="btn btn-primary">¡Quiero adoptar!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <img src="imagenes/gatito.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Polaco</h5>
+                              <p class="card-text">Creció en la calle y está esperando quien lo sume a su familia.</p>
+                              <a href="#" class="btn btn-primary">¡Quiero adoptar!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <img src="imagenes/dog.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Rubio</h5>
+                              <p class="card-text">Perrito comunitario en búsqueda de un hogar definitivo.</p>
+                              <a href="#" class="btn btn-primary">¡Quiero adoptar!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <img src="imagenes/kittens.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Gatitos</h5>
+                              <p class="card-text">La vida es más linda con una mascota, adoptá y transformá tu días.</p>
+                              <a href="#" class="btn btn-primary">¡Quiero adoptar!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="titulos">Más sitios para encontrar tu nueva mascota</h2>
+
             <ul class="sitioslista">
                 <li>
                     <a class="sitiosadopcion" href="">ONGs rescatistas 1</a>
@@ -159,5 +241,6 @@
         </div>
     </footer>
     
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
