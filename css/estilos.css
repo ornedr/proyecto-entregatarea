@@ -105,6 +105,7 @@ h3{
 .presentacion{
     text-align: center;
     font-size: 24px;
+    padding: 0px 190px;
 }
 
 .seccion{
@@ -171,6 +172,9 @@ h3{
     max-width: 400px;
 }
 
+.imagen{
+    width: 100%;
+}
 .perritos{
     max-width: 300px;
 }
@@ -250,6 +254,10 @@ h3{
     margin: 15px;
 }
 
+.parrafo{ 
+    margin-bottom: 0px;
+}
+
 .premisas{
     background-color: rgba(65, 105, 225, 0.377);
     padding: 20px;
@@ -292,28 +300,10 @@ h3{
     padding: 15px;
 }
 
-/* comento porque quiero probar bootstrap
-.art{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-}
-
-.art1{
-    min-width: 50%;
-    padding-left: 110px;
-    text-align: left;
-}
-
-.art2{
-    min-width: 50%;
-    text-align: left;
-} */
-
 .artb{
     text-align: left;
     background-color: rgba(65, 105, 225, 0.377);
+    padding: 5px 10px;
 }
 
 .lista{
@@ -336,7 +326,7 @@ h3{
 
 .sitiosadopcion{
     text-decoration: none;
-    color: rgb(7, 0, 73); /*no me toma el color, no sé dónde ponerlo (estaba manipulando el li, debebía ser a)*/
+    color: rgb(7, 0, 73); /*no me toma el color, no sé dónde ponerlo (estaba manipulando el li, debebía ser a, ahora ok)*/
     font-size: 20px;
     padding: 5px 10px;
     transition: all 1s;
@@ -345,6 +335,23 @@ h3{
 .sitiosadopcion:hover{
     font-weight: 900;
     color: royalblue;
+}
+
+.carrusel{
+    padding: 0px 0px;
+}
+
+.texto{
+    background-color: rgba(61, 57, 57, 0.5);
+    box-shadow: 0 0 5px rgba(61, 57, 57, 0.664);
+}
+
+.contacto{
+    padding: 30px 0px;
+}
+
+.iframe{
+    width: 100%;
 }
 
 .pie{
@@ -416,6 +423,10 @@ esto es: celulares, tablets, notebooks. "El diseño ahora es mobile first"-Luis*
         width: 100%;
     }
 
+    .presentacion{
+        padding: 5px;
+    }
+
     .navegacion{
         min-width: 100%;
     }
@@ -459,6 +470,16 @@ esto es: celulares, tablets, notebooks. "El diseño ahora es mobile first"-Luis*
         flex-direction: column;
     }
     
+    .iframe{
+        padding-top: 15px;
+    }
+
+    .texto{
+        font-size: 12px;
+        padding: 0px;
+        align-items: center;
+    }
+
     .contenedor_pie{
         flex-direction: column;
         justify-content: center;
