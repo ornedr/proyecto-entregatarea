@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turnos|Comodoro Rivadavia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="icon" type="image/png" href="imagenes/protenencia_logo_imagen-transparencia.png">
 </head>
 <body>
     <header class="cabecera">
@@ -38,100 +40,112 @@
 
     <main>
         <section class="hero">
-            <h1 class="TituloPrincipal">Solicitá turno | Comodoro Rivadavia</h1>
+            <h1 class="tituloprincipal">Solicitá turno | Comodoro Rivadavia</h1>
         </section>
 
-        <section> <!--formulario turno/revisar si es + de 1 animal-->
-        <form action=""></form>
-        <fieldset>
-        <legend>Completá con tus datos</legend>
-        <div>
-            <label for="Nombre">Nombres</label>
-            <input type="text" name="Nombres" id="nombres" placeholder="Nombres">
-        </div>
-        <div>
-            <label for="Apellido">Apellidos</label>
-            <input type="text" name="Apellidos" id="apellidos" placeholder="Apellidos">
-        </div>
-        <div>
-            <label for="DNI">DNI</label>
-            <input type="text" name="DNI" id="DNI" placeholder="Solo números">
-        </div>
-        <div>
-            <label for="Celular">Celular</label>
-            <input type="tel" name="Celular" id="Celular" placeholder="297 436 7490">
-        </div>
-        <div>
-            <label for="email">Correo electrónico</label>
-            <input type="email" name="correo" id="correo" placeholder="Correo electrónico">
-        </div>
-        <div>
-            <label for="Zona" for=zona>Seleccioná tu zona</label>
-            <select name="Zona" id="zona">
-                <option value="norte">Zona norte</option>
-                <option value="sur">Zona sur</option>
-        </select>
-        </div>
-        <div>
-            <label for="Domicilio">Domicilio</label>
-            <input type="text" name="Domicilio" id="Domicilio" placeholder="Calle y número">
-        </div>
-        <div>
-            <label for="nombre">Nombre del animal</label>
-            <input type="text" name="Nombre" id="nombre">
-        </div>
-        <div>
-            <label for="Seleccione">Seleccione tipo</label>
-            <select name="Tipo" id="tipo">
-                <option value="perra">perra</option>
-                <option value="perro">perro</option>
-                <option value="gata">gata</option>
-                <option value="gato">gato</option>
-            </select>
-        </div>
-        <div>
-            <label for="Tamaño">Tamaño</label>
-            <select name="tamaño" id="tamaño">
-                <option value="pequeño">pequeño</option>
-                <option value="mediano">mediano</option>
-                <option value="grande">grande</option>
-            </select>
-        </fieldset>
-        <button>Solicitar turno</button>
-        </section>
+        <section> <!--formulario turno/revisar si es + de 1 animal-->   
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col12 col-md-6">
+                        <legend>Completá con tus datos</legend>
+                        <form action=""></form>
+                        <fieldset>
+                            <div>
+                                <label for="Nombre">Nombres</label>
+                                <input type="text" name="Nombres" id="nombres" placeholder="Nombres">
+                            </div>
+                            <div>
+                                <label for="Apellido">Apellidos</label>
+                                <input type="text" name="Apellidos" id="apellidos" placeholder="Apellidos">
+                            </div>
+                            <div>
+                                <label for="DNI">DNI</label>
+                                <input type="text" name="DNI" id="DNI" placeholder="Solo números">
+                            </div>
+                            <div>
+                                <label for="Celular">Celular</label>
+                                <input type="tel" name="Celular" id="Celular" placeholder="297 436 7490">
+                            </div>
+                            <div>
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" name="correo" id="correo" placeholder="tucorreo@gmail.com">
+                            </div>
+                            <div>
+                                <label for="Zona" for=zona>Seleccioná tu zona</label>
+                                <select name="Zona" id="zona">
+                                    <option value="norte">Zona norte</option>
+                                    <option value="sur">Zona sur</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="Domicilio">Domicilio</label>
+                                <input type="text" name="Domicilio" id="Domicilio" placeholder="Calle y número">
+                            </div>
+                            <div>
+                                <label for="nombre">Nombre del animal</label>
+                                <input type="text" name="Nombre" id="nombre" placeholder="Firulais">
+                            </div>
+                            <div>
+                                <label for="Seleccione">Seleccione tipo</label>
+                                <select name="Tipo" id="tipo">
+                                    <option value="perra">perra</option>
+                                    <option value="perro">perro</option>
+                                    <option value="gata">gata</option>
+                                    <option value="gato">gato</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="Tamaño">Tamaño</label>
+                                <select name="tamaño" id="tamaño">
+                                    <option value="pequeño">pequeño</option>
+                                    <option value="mediano">mediano</option>
+                                    <option value="grande">grande</option>
+                                </select>
+                        </fieldset>
+                        <button class="boton">Solicitar turno</button>
+                    </div>
 
-        <section> <!--Recomendaciones importantes-->
-            <div class="seccion">
-                <div class="necesarias_mitos">
-                    <h3 class="motivos">Indicaciones antes de la operación</h3>
-                    <ul class="motivos">
-                        <li>El animal debe asistir provisto de collar y correa o jaula de transporte y conducido por una persona mayor.</li>
-                        <li>Suprimir los alimentos sólidos 12 horas antes de la operación.</li>
-                        <li>Suprimir los líquidos 6/7 horas antes de la operación.</li>
-                    </ul>
-                    <div>
-                        <img class="cachorros" src="imagenes/cachorrosenlacalle.jpg" alt="cachorros">
-                    </div>  
-                </div>
-            </div>
-        
-            <div class="seccion">
-                <div class="necesarias_mitos">
-                    <h3 class="motivos">Indicaciones después de la operación</h3>
-                    <ul class="motivos">
-                        <li>Para retirar al animal, concurrir con una manta, lona o similar.</li>
-                        <li>Darle de beber agua 5 horas después de la operación en pequeñas cantidades. Comida, en pequeñas cantidades, luego de las 12 horas.</li>
-                        <li>Mantenerlo en lugar cerrado por 24 horas, a nivel del suelo, tranquilo y en silencio.</li>
-                        <li>No darle ningún medicamento sin prescripción médica.</li>
-                        <li>Si se muerde o lame la herida, colocarle un collar isabelino o una pantalla.</li>
-                        <li>A los 15 días de la operación deben extraerse los puntos, puede concurrir a su veterinario de confianza o al tráiler.</li>
-                    </ul>
-                    <div>
-                        <img class="gatitos" src="imagenes/kitten.png" alt="gatitos">
+                    <div class="col12 col-md-6">
+                        <div class="m-4">
+                            <div class="accordion" id="myAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Recomendaciones antes de la operación</button>									
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+                                        <div class="card-body">                                        
+                                            <ul>
+                                                <li>El animal debe asistir provisto de collar y correa o jaula de transporte y conducido por una persona mayor.</li>
+                                                <li>Suprimir los alimentos sólidos 12 horas antes de la operación.</li>
+                                                <li>Suprimir los líquidos 6/7 horas antes de la operación.</li>
+                                            </ul>                                         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Recomendaciones después de la operación</button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                        <div class="card-body">                                            
+                                            <ul>
+                                                <li>Para retirar al animal, concurrir con una manta, lona o similar.</li>
+                                                <li>Darle de beber agua 5 horas después de la operación en pequeñas cantidades. Comida, en pequeñas cantidades, luego de las 12 horas.</li>
+                                                <li>Mantenerlo en lugar cerrado por 24 horas, a nivel del suelo, al resguardo del frío, tranquilo y en silencio.</li>
+                                                <li>No darle ningún medicamento sin prescripción médica.</li>
+                                                <li>Si se muerde o lame la herida, colocarle un collar isabelino o una pantalla.</li>
+                                                <li>A los 15 días de la operación deben extraerse los puntos, puede concurrir a su veterinario de confianza o al tráiler.</li>
+                                            </ul>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer class="pie">
@@ -139,27 +153,41 @@
             <div class="contenedor_nav">
                 <nav>
                     <ul class="nav_pie">
-                        <li><a  class="enlace_pie" href="index.html">Inicio</a></li>
+                        <li><a class="enlace_pie" href="index.html">Inicio</a></li>
                         <li><a class="enlace_pie" href="solicitaturno.html">Solicitá turno</a></li>
                         <li><a class="enlace_pie" href="contacto.html">Contacto</a></li>
                         <li><a class="enlace_pie" href="adopta.html">Adoptá</a></li>
                     </ul>
                 </nav>
-            </div>
-            
-            <div>
-                <nav> 
+
+                <nav class="rrss"> 
                     <a href="https://facebook.com/" target="_blank"><span class="jam jam-facebook-square rrss_iconos"></span></a>
                     <a href="https://www.instagram.com" target="_blank"><span class="jam jam-instagram rrss_iconos"></span></a>
                     <a href="https://api.whatsapp.com/send?phone=5492974367490" target="_blank"><span class="jam jam-whatsapp rrss_iconos"></span> </a>
                 </nav>
             </div>
-        </div>
+     
+            <div class="otros">
+                <p class="parrafo">Otros sitios de interés</p>
+                <ul class="otros">
+                    <li>
+                        <a class="enlace_pie otros" href="https://www.comodoro.gov.ar/" target="_blank">Municipalidad de Comodoro Rivadavia</a>
+                    </li>
+                    <li>
+                        <a class="enlace_pie otros" href="https://www.argentina.gob.ar/salud/protenencia" target="_blank">Programa Protenencia Argentina</a>
+                    </li>
+                    <li>
+                        <a class="enlace_pie otros" href="https://www.argentina.gob.ar/normativa/nacional/ley-14346-153011" target="_blank">Ley 14.346</a>
+                    </li>
+                </ul>
+            </div>
+        </div>          
         
         <div class="fin">
             Hecho con amor con fines educativos | 2021 | Por Ornella De Rosa
         </div>
     </footer>
 
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
