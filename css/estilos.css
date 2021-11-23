@@ -409,10 +409,24 @@ h3{
     margin-top: 10px;
 }
 
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /*Medias querys*/ /*Se usa para adaptar el sitio a dispositivos con pantallas más pequeñas que un escritorio de pc,
 esto es: celulares, tablets, notebooks. "El diseño ahora es mobile first"-Luis*/
 
 @media (max-width: 768px) {
+    .carousel-item {
+        height: 400px;
+    }
+
     .cabecera .contenedor{
         flex-direction: column;
         max-width: 100%;
