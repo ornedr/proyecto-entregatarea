@@ -1,4 +1,4 @@
-/* Codigo CSS */
+/* Código CSS */
 /* 
 Sintaxis
 Selector {
@@ -108,10 +108,6 @@ h3{
     padding: 0px 190px;
 }
 
-.seccion{
-    padding: 64px 32px;
-}
-
 .titulos{
     display: inline-block;
     padding: 5px;
@@ -123,80 +119,8 @@ h3{
     border-radius: 3px;
 }
 
-.necesarias_mitos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px;
-    align-items: center;
-}
-
-.seccion_beneficios{
-    padding: 64px 32px;
-    text-align: center;
-}
-
-.beneficios_titulo{ /*HELP, por qué no logro alinear a la derecha o centrar? para probar qué es mejor*/
-    display: inline-block;
-    flex-wrap: wrap;
-    padding: 5px;
-    margin: 15px;
-    font-size: 26px;
-    font-weight: 400;
-    background-color: rgba(65, 105, 225, 0.377);
-    border-radius: 3px;   
-}
-
-.beneficios{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: row-reverse;
-    gap: 15px;
-    text-align: justify;
-}
-
-.beneficio{
-    text-align: center;
-    background-color: rgba(65, 105, 225, 0.377);
-    padding: 30px;
-    width: 80%;
-    max-width: 400px;
-}
-
-.motivos{
-    background-color: rgba(65, 105, 225, 0.377);
-    padding: 30px;
-    width: 80%;
-    max-width: 400px;
-}
-
 .imagen{
     width: 100%;
-}
-.perritos{
-    max-width: 300px;
-}
-
-.perroygato{
-    max-width: 300px;
-}
-
-.cachorroabandonado{
-    max-width: 300px;
-}
-
-.gatitaycrias{
-    max-width: 300px;
-}
-
-.cachorros{
-    max-width: 300px;
-}
-
-.gatitos{
-    max-width: 300px;
 }
 
 .video{
@@ -208,37 +132,30 @@ h3{
     margin-top: 20px;
 }
 
-.protenencia{
-    display: inline-block;
-    font-size: 24px;
-    padding: 5px;
-    margin: 15px;
-    font-weight: 400;
-    background-color: rgba(65, 105, 225, 0.377);
-    border-radius: 3px;
-}
-
 .regalasalud{
     text-align: center;
 }
 
 .accion{
     font-style: italic;
-    margin: 16px;
+    margin-top: 16px;
+    margin-bottom: 0px;
     font-weight: 400;
 }
 
 .boton{
     display: inline-block;
-    background-color: deepskyblue;
+    background-color: royalblue;
     text-decoration: none;
     color: ghostwhite;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     font-weight: 900;
     letter-spacing: 1.5px;
     margin-bottom: 32px;
     transition: all 1s;
+    border-style: none;
+    margin: 16px;
 }
 
 .boton:hover{
@@ -300,6 +217,10 @@ h3{
     padding: 15px;
 }
 
+.articulo{
+    margin-bottom: 20px;
+}
+
 .artb{
     text-align: left;
     background-color: rgba(65, 105, 225, 0.377);
@@ -314,6 +235,10 @@ h3{
     font-size: 26px;
     font-weight: 900;
     text-align: center;
+}
+
+.sitios{
+    margin-top: 32px;
 }
 
 .sitioslista{
@@ -338,7 +263,18 @@ h3{
 }
 
 .carrusel{
-    padding: 0px 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.carousel-item{
+    height: 478px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .texto{
@@ -370,24 +306,34 @@ h3{
 .contenedor_nav{
     color: aliceblue;
     text-decoration: none;
+    align-self: center;
 }
 
 .nav_pie{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
+    padding-left: 0;
 }
 
 .enlace_pie{
     color: rgb(7, 0, 73); /*no me toma el color, no sé dónde ponerlo (estaba manipulando el li, debebía ser a)*/
     font-size: 20px;
     text-decoration: none; /*no me toma el cambio, intenté mil formas (estaba manipulando el li, debebía ser a)*/
-    margin: 10px;
+    margin: 8px;
     transition: all 1s;
 }
 
 .enlace_pie:hover{
     color: aliceblue;
+}
+
+.rrss{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 .rrss_iconos{
@@ -396,11 +342,18 @@ h3{
     color:rgb(7, 0, 73);
     font-size: 25px;
     margin: 10px;
+    margin-bottom: 20px;
     transition: all 1s;
 }
 
 .rrss_iconos:hover{
     color: aliceblue;
+}
+
+.otros{
+    font-size: 18px;
+    margin: 0;
+    list-style: none;
 }
 
 .fin{
@@ -409,24 +362,10 @@ h3{
     margin-top: 10px;
 }
 
-.carousel-item {
-    height: 600px;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 /*Medias querys*/ /*Se usa para adaptar el sitio a dispositivos con pantallas más pequeñas que un escritorio de pc,
 esto es: celulares, tablets, notebooks. "El diseño ahora es mobile first"-Luis*/
 
 @media (max-width: 768px) {
-    .carousel-item {
-        height: 400px;
-    }
-
     .cabecera .contenedor{
         flex-direction: column;
         max-width: 100%;
@@ -456,22 +395,16 @@ esto es: celulares, tablets, notebooks. "El diseño ahora es mobile first"-Luis*
         max-height: 96.84px;
     }
 
-    .seccion .seccion_beneficios{
-        flex-direction: column;
-        padding: 5px;
-    }
-
-    .motivos{
-        text-align: start;
-    }
-
     .titulos{
         font-size: 22px;
     }
 
+    .carousel-item{
+        height: 400px;
+    }
+
     .videoyt{
-        max-width: 320px;
-        max-height: 206.25px;
+        width: 100%;
     }
 
     .seccionadopta{
@@ -479,9 +412,17 @@ esto es: celulares, tablets, notebooks. "El diseño ahora es mobile first"-Luis*
         padding: 0;
     }
 
+    .todalavida{
+        font-size: 20px;
+    }
+
     .sitioslista{
         width: 100%;
         flex-direction: column;
+    }
+
+    .card{
+        margin-bottom: 15px;
     }
     
     .iframe{
@@ -498,5 +439,15 @@ esto es: celulares, tablets, notebooks. "El diseño ahora es mobile first"-Luis*
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .rrss{
+        margin-bottom: 15px;
+    }
+
+    .otros_titulo{
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
 }

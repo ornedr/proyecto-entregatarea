@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="icon" type="image/png" href="imagenes/protenencia_logo_imagen-transparencia.png">
 </head>
 <body>
     <header class="cabecera">
@@ -80,38 +81,10 @@
                 </h3>
             </div> 
             
-            <!--<div> comento porque quiero probar bootstrap
-                <h3 class="ley">Ley 14.346</h3>
-                <div class="art">
-                    <div class="art1">
-                        <h4>Art. 2: Se consideran actos de maltrato</h4>
-                        <ol>
-                            <li>No alimentar a los animales.</li>
-                            <li>Espolearlos (picar con espuelas) para el trabajo.</li>
-                            <li>Hacerlos trabajar jornadas excesivas.</li>
-                            <li>Estimularlos con drogas.</li>
-                            <li>Emplear animales para el tiro vehículos.</li>
-                        </ol>
-                    </div>
-    
-                    <div class="art2">
-                        <h4>Art.3: Se consideran actos de crueldad.</h4>
-    
-                        <ol>
-                            <li>Practicar vivisección con fines que no sean científicamente demostrados.</li>
-                            <li>Mutilar cualquier parte del animal, salvo con fines de mejoramiento.</li>
-                            <li>Intervenir quirúrgicamente animales sin anestesia y sin poseer título de médico veterinario.</li>
-                            <li>Castigar y arrollar animales intencionalmente.</li>
-                            <li>Realizar actos públicos o privados de riñas de animales, corridas de toros, novilladas, en que los mate, hiera u hostilice.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>-->
-            
             <div class="container">
                 <h3 class="ley">Ley 14.346</h3>
                 <div class="row">
-                    <div class="col col-6">
+                    <div class="col-12 col-md-6 articulo">
                         <div class="artb">
                             <h4>Art. 2: Se consideran actos de maltrato</h4>
                             <ol>
@@ -124,7 +97,7 @@
                         </div>  
                     </div>
         
-                    <div class="col col-6">
+                    <div class="col-12 col-md-6 articulo">
                         <div class="artb">
                             <h4>Art.3: Se consideran actos de crueldad.</h4>
                             <ol>
@@ -191,7 +164,8 @@
                 </div>
             </div>
 
-            <h2 class="titulos">Más sitios para encontrar tu nueva mascota</h2>
+            <div class="sitios">
+                <h2 class="titulos">Más sitios para encontrar tu nueva mascota</h2>
 
             <ul class="sitioslista">
                 <li>
@@ -210,6 +184,9 @@
             
             <p>♥Podemos erradicar el abandono y la sobrepoblación entre todos, ¡animate a cambiarle la vida a un animalito!♥
             </p>
+            </div>
+
+            
         </section>
 
     </main>
@@ -219,22 +196,35 @@
             <div class="contenedor_nav">
                 <nav>
                     <ul class="nav_pie">
-                        <li><a  class="enlace_pie" href="index.html">Inicio</a></li>
+                        <li><a class="enlace_pie" href="index.html">Inicio</a></li>
                         <li><a class="enlace_pie" href="solicitaturno.html">Solicitá turno</a></li>
                         <li><a class="enlace_pie" href="contacto.html">Contacto</a></li>
                         <li><a class="enlace_pie" href="adopta.html">Adoptá</a></li>
                     </ul>
                 </nav>
-            </div>
-            
-            <div>
-                <nav> 
+
+                <nav class="rrss"> 
                     <a href="https://facebook.com/" target="_blank"><span class="jam jam-facebook-square rrss_iconos"></span></a>
                     <a href="https://www.instagram.com" target="_blank"><span class="jam jam-instagram rrss_iconos"></span></a>
                     <a href="https://api.whatsapp.com/send?phone=5492974367490" target="_blank"><span class="jam jam-whatsapp rrss_iconos"></span> </a>
                 </nav>
             </div>
-        </div>
+     
+            <div class="otros">
+                <p class="parrafo">Otros sitios de interés</p>
+                <ul class="otros">
+                    <li>
+                        <a class="enlace_pie otros" href="https://www.comodoro.gov.ar/" target="_blank">Municipalidad de Comodoro Rivadavia</a>
+                    </li>
+                    <li>
+                        <a class="enlace_pie otros" href="https://www.argentina.gob.ar/salud/protenencia" target="_blank">Programa Protenencia Argentina</a>
+                    </li>
+                    <li>
+                        <a class="enlace_pie otros" href="https://www.argentina.gob.ar/normativa/nacional/ley-14346-153011" target="_blank">Ley 14.346</a>
+                    </li>
+                </ul>
+            </div>
+        </div>          
         
         <div class="fin">
             Hecho con amor con fines educativos | 2021 | Por Ornella De Rosa
